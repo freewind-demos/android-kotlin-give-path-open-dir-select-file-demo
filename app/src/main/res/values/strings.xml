@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">android-kotlin-give-path-open-dir-select-file-demo</string>
     <string name="title_demo">android-kotlin-give-path-open-dir-select-file-demo</string>
-    <string name="desc_demo">输绝对路径，点按钮。app 会尽量打开它所在目录；若系统文件管理器支持，会落到目标文件附近。Android 公共 API 不保证“高亮选中”。</string>
+    <string name="desc_demo">输绝对路径，点按钮。app 只会尽量打开它所在目录附近。Android 公共 API 不保证“高亮选中”，也不保证目标文件自动滚到可视区域。</string>
     <string name="hint_absolute_path">/sdcard/Download/test.txt</string>
     <string name="action_open_parent_dir">Open parent dir</string>
     <string name="label_status">Status</string>
     <string name="label_resolved_uri">Resolved Uri</string>
     <string name="label_limit">Limit</string>
-    <string name="text_limit">仅对共享存储路径更有效：/sdcard、/storage/emulated/0、/storage/&lt;volumeId&gt;。app 私有目录通常不能交给系统文件管理器浏览。</string>
+    <string name="text_limit">仅对共享存储路径更有效：/sdcard、/storage/emulated/0、/storage/&lt;volumeId&gt;。app 私有目录通常不能交给系统文件管理器浏览。即使成功打开目录，也不能保证目标文件会被选中、滚到可视区域，或在大目录里自动定位出来。</string>
 </resources>
